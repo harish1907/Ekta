@@ -6,12 +6,20 @@ export default function NavBarType() {
     linkStyle: {
       color: "#fff"
     },
-    searchStyle: {
+    searchDiv: {
       marginRight: "35rem",
       width: "25rem"
     },
     navDesign: {
       padding: "0.8rem"
+    },
+    searchStyle: {
+      background: "transparent",
+      width: "100%", 
+      fontSize: "1rem", 
+      padding:"10px 15px",
+      color: "#fff",
+      boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px"
     }
   }
   return (
@@ -36,8 +44,8 @@ export default function NavBarType() {
             <Link className="nav-link" to="" style={styles.linkStyle}>About</Link>
           </li>
         </ul>
-        <form className="d-flex" role="search" style={styles.searchStyle}>
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <form className="d-flex" role="search" style={styles.searchDiv}>
+          <input style={styles.searchStyle} className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         </form>
       </div>
     </div>
