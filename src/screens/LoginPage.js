@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import InputField from '../components/InputField'
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-import Logo from '../image/logo.png';
+import Logo from '../images/logo.png';
+import './LoginSign.css'
 
 const loginSchema = Yup.object({
 	username: Yup.string().min(5).max(25).required("Please enter your name"),

@@ -1,4 +1,3 @@
-import './App.css';
 import LoginPage from './screens/LoginPage';
 
 function App() {
